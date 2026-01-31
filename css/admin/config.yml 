@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: dzdqzdqzdeaqzd/souk-beyrouth
   branch: main
 
 media_folder: "assets/images/blog"
