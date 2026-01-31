@@ -11,12 +11,8 @@ public_folder: "/assets/images/blog"
 collections:
   - name: "blog"
     label: "Articles du Blog"
-    folder: "data"
-    format: "json"
-    create: false
-    slug: "blog"
     files:
-      - name: "blog"
+      - name: "articles"
         label: "Articles"
         file: "data/blog.json"
         fields:
