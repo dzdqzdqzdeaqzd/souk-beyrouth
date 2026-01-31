@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images/blog"
+public_folder: "/assets/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Articles du Blog"
+    folder: "data"
+    format: "json"
+    create: false
+    slug: "blog"
+    files:
+      - name: "blog"
+        label: "Articles"
+        file: "data/blog.json"
+        fields:
+          - name: "articles"
+            label: "Articles"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID", widget: "number", value_type: "int" }
+              - { name: "title", label: "Titre", widget: "string" }
+              - { name: "slug", label: "Slug URL", widget: "string" }
+              - name: "category"
+                label: "Catégorie (code)"
+                widget: "select"
+                options:
+                  - { label: "Recettes", value: "recettes" }
+                  - { label: "Actualités", value: "actus" }
+                  - { label: "Producteurs", value: "producteurs" }
+              - name: "categoryLabel"
+                label: "Catégorie (affichée)"
+                widget: "select"
+                options:
+                  - { label: "Recettes Saisonnières", value: "Recettes Saisonnières" }
+                  - { label: "Actualités", value: "Actualités" }
+                  - { label: "Producteurs", value: "Producteurs" }
+              - { name: "excerpt", label: "Résumé", widget: "text" }
+              - { name: "content", label: "Contenu", widget: "markdown" }
+              - { name: "image", label: "Image URL", widget: "string" }
+              - { name: "author", label: "Auteur", widget: "string", default: "Rima" }
+              - { name: "date", label: "Date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+              - { name: "readTime", label: "Temps de lecture", widget: "string", default: "5 min" }
+              - { name: "featured", label: "À la une", widget: "boolean", default: false }

@@ -57,6 +57,9 @@
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  
+  <!-- Netlify Identity -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   <!-- Bandeau d'annonce -->
@@ -194,14 +197,14 @@
             <span class="section-header__label">Notre Histoire</span>
             <h2 class="section-header__title">Un couple, deux cultures,<br>une passion</h2>
             <p class="our-story__text">
-              <strong>Souk Beyrouth</strong> est né de notre rencontre : Nour, libanaise de Beyrouth, et Karim, français passionné par le Proche-Orient. Notre mission ? Faire découvrir aux Parisiens les saveurs authentiques de la cuisine libanaise, loin des clichés et des recettes adaptées.
+              <strong>Souk Beyrouth</strong> est né de notre rencontre : Rima, libanaise de Beyrouth, et Fabrice, français passionné par le Proche-Orient. Notre mission ? Faire découvrir aux Parisiens les saveurs authentiques de la cuisine libanaise, loin des clichés et des recettes adaptées.
             </p>
             <p class="our-story__text">
               Nous travaillons directement avec des producteurs familiaux au Liban, que nous connaissons personnellement. Chaque produit raconte une histoire : les oliviers millénaires de Bchaaleh, les épiciers traditionnels du souk de Tripoli, les artisans pâtissiers de Beyrouth.
             </p>
             <blockquote class="our-story__quote">
               "Nous voulions recréer l'ambiance d'une épicerie de quartier chic à Beyrouth, où l'on trouve des produits d'exception et où l'on prend le temps de discuter."
-              <cite>— Nour & Karim, fondateurs</cite>
+              <cite>— Rima & Fabrice, fondateurs</cite>
             </blockquote>
             <div class="our-story__stats">
               <div class="our-story__stat">
@@ -469,5 +472,18 @@
   <script src="./js/cart.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/pages/home.js"></script>
+  
+  <!-- Netlify Identity redirect -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
