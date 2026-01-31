@@ -1,0 +1,211 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Za'atar du Chouf",
+      "category": "epices",
+      "categoryLabel": "Épices",
+      "description": "Mélange traditionnel de thym sauvage, sésame et sumac, récolté à la main dans les montagnes du Chouf.",
+      "price": 12.90,
+      "unit": "200g",
+      "origin": "Chouf, Liban",
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=450&fit=crop",
+      "badge": "bestseller",
+      "badgeLabel": "Best-seller",
+      "clickCollect": true,
+      "stock": 45
+    },
+    {
+      "id": 2,
+      "name": "Huile d'olive Bchaaleh",
+      "category": "epicerie",
+      "categoryLabel": "Épicerie",
+      "description": "Huile d'olive extra vierge première pression à froid, des oliviers millénaires de Bchaaleh.",
+      "price": 24.50,
+      "unit": "500ml",
+      "origin": "Bchaaleh, Liban",
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&h=450&fit=crop",
+      "badge": "new",
+      "badgeLabel": "Nouveau",
+      "clickCollect": true,
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "name": "Hommos Artisanal",
+      "category": "frais",
+      "categoryLabel": "Frais",
+      "description": "Hommos crémeux préparé quotidiennement selon la recette familiale, tahini de Sidon.",
+      "price": 6.90,
+      "unit": "250g",
+      "origin": "Beyrouth, Liban",
+      "image": "https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?w=600&h=450&fit=crop",
+      "badge": null,
+      "badgeLabel": null,
+      "clickCollect": true,
+      "stock": 20
+    },
+    {
+      "id": 4,
+      "name": "Baklawa Pistache",
+      "category": "patisseries",
+      "categoryLabel": "Pâtisseries",
+      "description": "Baklawa aux pistaches d'Alep, sirop de rose et eau de fleur d'oranger.",
+      "price": 18.00,
+      "unit": "500g",
+      "origin": "Tripoli, Liban",
+      "image": "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600&h=450&fit=crop",
+      "badge": "bestseller",
+      "badgeLabel": "Best-seller",
+      "clickCollect": true,
+      "stock": 15
+    },
+    {
+      "id": 5,
+      "name": "Café Arabica Cardamome",
+      "category": "epicerie",
+      "categoryLabel": "Épicerie",
+      "description": "Café arabica torréfié avec cardamome fraîchement moulue, tradition libanaise.",
+      "price": 14.90,
+      "unit": "250g",
+      "origin": "Beyrouth, Liban",
+      "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&h=450&fit=crop",
+      "badge": null,
+      "badgeLabel": null,
+      "clickCollect": true,
+      "stock": 50
+    },
+    {
+      "id": 6,
+      "name": "Labneh Baladi",
+      "category": "frais",
+      "categoryLabel": "Frais",
+      "description": "Yaourt égoutté traditionnel, onctueux et légèrement acidulé, huile d'olive.",
+      "price": 7.50,
+      "unit": "300g",
+      "origin": "Bekaa, Liban",
+      "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&h=450&fit=crop",
+      "badge": null,
+      "badgeLabel": null,
+      "clickCollect": true,
+      "stock": 25
+    },
+    {
+      "id": 7,
+      "name": "Mouhammara",
+      "category": "epicerie",
+      "categoryLabel": "Épicerie",
+      "description": "Tartinade épicée aux poivrons rouges, noix et mélasse de grenade.",
+      "price": 9.90,
+      "unit": "200g",
+      "origin": "Alep, Syrie",
+      "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&h=450&fit=crop",
+      "badge": "new",
+      "badgeLabel": "Nouveau",
+      "clickCollect": true,
+      "stock": 35
+    },
+    {
+      "id": 8,
+      "name": "Sumac de Syrie",
+      "category": "epices",
+      "categoryLabel": "Épices",
+      "description": "Baies de sumac moulues, acidulées et fruitées, essentiel des mezzés.",
+      "price": 8.50,
+      "unit": "100g",
+      "origin": "Syrie",
+      "image": "https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=600&h=450&fit=crop",
+      "badge": null,
+      "badgeLabel": null,
+      "clickCollect": true,
+      "stock": 40
+    },
+    {
+      "id": 9,
+      "name": "Knafeh Nabulsieh",
+      "category": "patisseries",
+      "categoryLabel": "Pâtisseries",
+      "description": "Dessert palestinien au fromage filé et sirop parfumé, préparé sur commande.",
+      "price": 22.00,
+      "unit": "4 portions",
+      "origin": "Nablus, Palestine",
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=450&fit=crop",
+      "badge": "new",
+      "badgeLabel": "Nouveau",
+      "clickCollect": true,
+      "stock": 10
+    },
+    {
+      "id": 10,
+      "name": "Dattes Fraîches de Palmyre",
+      "category": "epicerie",
+      "categoryLabel": "Épicerie",
+      "description": "Dattes Medjool juteuses et sucrées, récolte de saison.",
+      "price": 15.90,
+      "unit": "500g",
+      "origin": "Palmyre, Syrie",
+      "image": "https://images.unsplash.com/photo-1596363505729-4190a9506133?w=600&h=450&fit=crop",
+      "badge": "new",
+      "badgeLabel": "Nouveau",
+      "clickCollect": true,
+      "stock": 60
+    },
+    {
+      "id": 11,
+      "name": "Ras El Hanout",
+      "category": "epices",
+      "categoryLabel": "Épices",
+      "description": "Mélange complexe de 20 épices, secret des épiciers de Beyrouth.",
+      "price": 11.90,
+      "unit": "80g",
+      "origin": "Beyrouth, Liban",
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=450&fit=crop",
+      "badge": null,
+      "badgeLabel": null,
+      "clickCollect": true,
+      "stock": 30
+    },
+    {
+      "id": 12,
+      "name": "Halva Sésame Pistache",
+      "category": "patisseries",
+      "categoryLabel": "Pâtisseries",
+      "description": "Pâte de sésame fondante avec cœur de pistache, délice ottoman.",
+      "price": 13.50,
+      "unit": "300g",
+      "origin": "Tripoli, Liban",
+      "image": "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=600&h=450&fit=crop",
+      "badge": null,
+      "badgeLabel": null,
+      "clickCollect": true,
+      "stock": 20
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "label": "Tous les produits",
+      "icon": "🛍️"
+    },
+    {
+      "id": "epicerie",
+      "label": "Épicerie",
+      "icon": "🫒"
+    },
+    {
+      "id": "frais",
+      "label": "Frais",
+      "icon": "🧀"
+    },
+    {
+      "id": "patisseries",
+      "label": "Pâtisseries",
+      "icon": "🥮"
+    },
+    {
+      "id": "epices",
+      "label": "Épices",
+      "icon": "🌿"
+    }
+  ]
+}

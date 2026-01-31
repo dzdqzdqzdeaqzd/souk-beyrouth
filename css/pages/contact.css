@@ -1,0 +1,275 @@
+/* ============================================
+   SOUK BEYROUTH - Page Contact
+   Styles spécifiques à la page Contact
+   ============================================ */
+
+/* ============================================
+   PAGE HERO CONTACT
+   ============================================ */
+.page-hero--contact {
+  background: linear-gradient(135deg, var(--vert-cedre) 0%, var(--vert-cedre-dark) 100%);
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+.contact-section {
+  background-color: var(--creme);
+}
+
+.contact__grid {
+  display: grid;
+  gap: var(--space-10);
+}
+
+@media (min-width: 1024px) {
+  .contact__grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--space-12);
+  }
+}
+
+/* Formulaire */
+.contact__form-wrapper {
+  background-color: var(--blanc);
+  padding: var(--space-8);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 640px) {
+  .contact__form-wrapper {
+    padding: var(--space-10);
+  }
+}
+
+.contact__form-title {
+  font-family: var(--font-titre);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--anthracite);
+  margin-bottom: var(--space-6);
+}
+
+.contact-form__note {
+  font-size: var(--text-sm);
+  color: var(--anthracite-light);
+  text-align: center;
+  margin-top: var(--space-4);
+  margin-bottom: 0;
+}
+
+.contact-form__note a {
+  color: var(--vert-cedre);
+  text-decoration: underline;
+}
+
+/* Infos de contact */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact-info__card {
+  background-color: var(--blanc);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-info__card h3 {
+  font-family: var(--font-titre);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--anthracite);
+  margin-bottom: var(--space-5);
+}
+
+.contact-info__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.contact-info__item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info__icon {
+  font-size: var(--text-2xl);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--creme);
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+}
+
+.contact-info__content h4 {
+  font-family: var(--font-titre);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--anthracite);
+  margin-bottom: var(--space-1);
+}
+
+.contact-info__content p {
+  font-size: var(--text-base);
+  color: var(--anthracite-light);
+  margin-bottom: var(--space-2);
+}
+
+.contact-info__link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--vert-cedre);
+}
+
+.contact-info__link:hover {
+  color: var(--vert-cedre-dark);
+  text-decoration: underline;
+}
+
+.contact-info__hours {
+  font-size: var(--text-sm);
+  color: var(--anthracite-light);
+  font-style: italic;
+}
+
+/* Horaires */
+.contact-hours {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contact-hours__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--creme-dark);
+}
+
+.contact-hours__row:last-child {
+  border-bottom: none;
+}
+
+.contact-hours__row span:first-child {
+  font-weight: 500;
+  color: var(--anthracite);
+}
+
+.contact-hours__row span:last-child {
+  color: var(--anthracite-light);
+}
+
+/* ============================================
+   FAQ SECTION
+   ============================================ */
+.faq-section {
+  background-color: var(--blanc);
+}
+
+.faq__grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.faq-item {
+  background-color: var(--creme);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.faq-item__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-5);
+  font-family: var(--font-titre);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--anthracite);
+  text-align: left;
+  transition: all var(--transition-fast);
+}
+
+.faq-item__question:hover {
+  background-color: var(--creme-dark);
+}
+
+.faq-item__icon {
+  flex-shrink: 0;
+  margin-left: var(--space-4);
+  transition: transform var(--transition-fast);
+}
+
+.faq-item__question[aria-expanded="true"] .faq-item__icon {
+  transform: rotate(180deg);
+}
+
+.faq-item__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow), padding var(--transition-slow);
+}
+
+.faq-item__question[aria-expanded="true"] + .faq-item__answer {
+  max-height: 500px;
+  padding: 0 var(--space-5) var(--space-5);
+}
+
+.faq-item__answer p {
+  font-size: var(--text-base);
+  color: var(--anthracite-light);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+.cta-section {
+  background-color: var(--creme);
+}
+
+.cta-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-10);
+  background: linear-gradient(135deg, var(--terre-cuite) 0%, var(--terre-cuite-dark) 100%);
+  border-radius: var(--radius-2xl);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cta-box {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.cta-box__content h2 {
+  font-family: var(--font-titre);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--blanc);
+  margin-bottom: var(--space-2);
+}
+
+.cta-box__content p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}

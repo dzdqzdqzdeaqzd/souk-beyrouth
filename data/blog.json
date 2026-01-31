@@ -1,0 +1,88 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Le Mezzé Parfait en 30 Minutes",
+      "slug": "mezzé-parfait-30-minutes",
+      "category": "recettes",
+      "categoryLabel": "Recettes Saisonnières",
+      "excerpt": "Composez un plateau de mezzés authentique avec nos produits : hommos, mouhammara, labneh et za'atar. L'art de recevoir à la libanaise.",
+      "content": "Le mezzé est bien plus qu'un simple apéritif : c'est un art de vivre, un moment de partage et de convivialité. Avec nos produits authentiques, recreatez cette magie chez vous en moins de 30 minutes.\n\n## Les incontournables\n\nCommencez par disposer au centre de votre table notre **Hommos Artisanal**, crémeux et parfumé au citron. Autour, disposez le **Mouhammara**, cette tartinade épicée aux poivrons qui réveille les papilles.\n\nLe **Labneh Baladi**, nappé d'un filet d'huile d'olive Bchaaleh et saupoudré de za'atar, sera la star végétarienne de votre plateau.\n\n## Les accompagnements\n\nPréchauffez votre four à 200°C. Étalez du za'atar sur des pains pita, arrosez d'huile d'olive et enfournez 5 minutes pour des manakish croustillants.\n\nAjoutez des olives kalamata, des cornichons, des tomates cerises et des concombres pour la fraîcheur.\n\n## Le secret des Libanais\n\nServez avec du thé à la menthe ou du café arabica cardamome. Et surtout, prenez votre temps : le mezzé se déguste en bonne compagnie, sans se presser.",
+      "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=800&h=500&fit=crop",
+      "author": "Nour",
+      "date": "2024-01-15",
+      "readTime": "5 min",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "La Vraie Recette du Moutabbal",
+      "slug": "vraie-recette-moutabbal",
+      "category": "recettes",
+      "categoryLabel": "Recettes Saisonnières",
+      "excerpt": "Le moutabbal, cousin fumé du baba ganoush, révèle tous ses secrets. Aubergines grillées, tahini et un soupçon de sumac.",
+      "content": "Le moutabbal est cette purée d'aubergine fumée qui accompagne divinement le hommos dans tout mezzé qui se respecte. Voici la recette authentique telle que ma grand-mère la préparait à Tripoli.\n\n## Ingrédients\n\n- 2 grosses aubergines\n- 3 cuillères à soupe de tahini de Sidon\n- Jus d'un citron frais\n- 2 gousses d'ail pressées\n- Sel et poivre\n- Sumac pour la décoration\n- Huile d'olive Bchaaleh\n\n## Préparation\n\n1. Piquez les aubergines et faites-les griller au four à 200°C pendant 45 minutes, jusqu'à ce que la peau soit noire et charbonnée.\n\n2. Laissez refroidir, puis retirez la peau. Égouttez la chair dans une passoire 30 minutes pour éliminer l'amertume.\n\n3. Mixez la chair avec le tahini, le citron et l'ail. Salez et poivrez selon votre goût.\n\n4. Servez dans un bol, creusez un puits au centre et remplissez d'huile d'olive. Saupoudrez de sumac.\n\n## Astuce de chef\n\nPlus les aubergines sont bien grillées, plus le goût fumé sera prononcé. N'ayez pas peur de les laisser noircir !",
+      "image": "https://images.unsplash.com/photo-1529312266912-b33cf6227e24?w=800&h=500&fit=crop",
+      "author": "Nour",
+      "date": "2024-01-08",
+      "readTime": "8 min",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Manakish au Za'atar Maison",
+      "slug": "manakish-zaatar-maison",
+      "category": "recettes",
+      "categoryLabel": "Recettes Saisonnières",
+      "excerpt": "Le petit-déjeuner libanais par excellence. Pain plat croustillant généreusement saupoudré de za'atar et d'huile d'olive.",
+      "content": "Les manakish sont ces pains plats que l'on trouve dans toutes les boulangeries de Beyrouth au petit matin. Avec notre za'atar du Chouf, recreatez cette tradition chez vous.\n\n## La pâte\n\n- 500g de farine T55\n- 1 sachet de levure boulangère\n- 1 cuillère à café de sucre\n- 1 cuillère à café de sel\n- 250ml d'eau tiède\n- 3 cuillères à soupe d'huile d'olive\n\n## La garniture\n\n- 4 cuillères à soupe de za'atar du Chouf\n- 6 cuillères à soupe d'huile d'olive Bchaaleh\n- 1 oignon finement haché (optionnel)\n\n## Préparation\n\n1. Mélangez la levure, le sucre et l'eau tiède. Laissez reposer 10 minutes jusqu'à ce que ça mousse.\n\n2. Ajoutez la farine, le sel et l'huile d'olive. Pétrissez 10 minutes jusqu'à obtenir une pâte souple.\n\n3. Laissez lever 1 heure dans un endroit chaud.\n\n4. Divisez la pâte en 8 boules. Étalez chacune en un cercle fin.\n\n5. Mélangez le za'atar et l'huile d'olive. Étalez sur les pains.\n\n6. Enfournez à 220°C pendant 8-10 minutes jusqu'à ce que les bords soient dorés.\n\nServez chaud avec du fromage blanc et des tomates fraîches.",
+      "image": "https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=800&h=500&fit=crop",
+      "author": "Karim",
+      "date": "2024-01-02",
+      "readTime": "10 min",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Nouveau : Dattes Fraîches de Palmyre",
+      "slug": "nouveau-dattes-palmyre",
+      "category": "actus",
+      "categoryLabel": "Actualités",
+      "excerpt": "Notre nouvelle récolte de dattes Medjool est arrivée ! Juteuses, sucrées et parfaites pour le goûter ou le Ramadan.",
+      "content": "Nous sommes ravis de vous annoncer l'arrivée de notre nouvelle récolte de **dattes fraîches de Palmyre** ! Ces dattes Medjool, réputées pour leur taille généreuse et leur goût caramel, viennent directement des palmeraies historiques de Syrie.\n\n## Une histoire de terroir\n\nPalmyre, l'antique cité caravanière, est entourée d'oasis où poussent les plus belles palmeraies du Levant. Nos dattes sont cultivées selon des méthodes traditionnelles, sans pesticides, et récoltées à la main à maturité parfaite.\n\n## Pourquoi les dattes Medjool ?\n\n- **Texture juteuse** : elles fondent dans la bouche\n- **Goût caramel** : naturellement sucrées sans être écœurantes\n- **Riches en fibres** : parfaites pour la digestion\n- **Source d'énergie** : idéales pour le sport ou le jeûne\n\n## Comment les déguster ?\n\nNature, farcies d'amandes ou de noix, dans vos smoothies, ou pour préparer des dattes fourrées au fromage frais pour l'apéritif.\n\nQuantité limitée pour cette première livraison !",
+      "image": "https://images.unsplash.com/photo-1596363505729-4190a9506133?w=800&h=500&fit=crop",
+      "author": "Équipe Souk Beyrouth",
+      "date": "2024-01-20",
+      "readTime": "3 min",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "Rencontre avec les Producteurs de Bchaaleh",
+      "slug": "rencontre-producteurs-bchaaleh",
+      "category": "producteurs",
+      "categoryLabel": "Producteurs",
+      "excerpt": "Voyage au cœur du Liban du Nord, où les oliviers millénaires de Bchaaleh produisent une huile d'exception.",
+      "content": "Au détour d'un sentier escarpé du Liban du Nord, nous avons rencontré la famille Choucair, guardians d'une tradition oléicole millénaire. Leurs oliviers, certains âgés de plus de 2000 ans, produisent une huile d'olive d'une qualité exceptionnelle.\n\n## Un patrimoine vivant\n\nLes oliviers de Bchaaleh sont classés au patrimoine mondial de l'UNESCO. Ces arbres antiques, témoins de l'histoire du Levant, continuent de donner des fruits d'une richesse incomparable.\n\n## La récolte\n\nChaque année en novembre, toute la famille se mobilise pour la récolte. Les olives sont cueillies à la main, une à une, pour préserver leur intégrité. Pressées dans les 24 heures, elles donnent une huile aux arômes d'herbe fraîche et d'amande verte.\n\n## Notre engagement\n\nEn important directement cette huile, nous garantissons :\n- Une rémunération équitable pour les producteurs\n- Une traçabilité totale\n- Une fraîcheur optimale\n\nC'est cette huile que nous vous proposons, celle qui parfumait la cuisine de ma grand-mère à Beyrouth.",
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=800&h=500&fit=crop",
+      "author": "Karim",
+      "date": "2023-12-15",
+      "readTime": "6 min",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Ramadan : Notre Sélection Spéciale",
+      "slug": "ramadan-selection-speciale",
+      "category": "actus",
+      "categoryLabel": "Actualités",
+      "excerpt": "Découvrez notre box Ramadan avec tous les essentiels pour vos iftars : dattes, épices, pâtisseries et produits frais.",
+      "content": "Le mois sacré de Ramadan approche et nous avons préparé une sélection spéciale pour vos iftars et sohour. Découvrez notre **Box Ramadan 2024**, un coffret gourmand avec tous les essentiels de la cuisine libanaise.\n\n## Contenu de la box\n\n### Pour rompre le jeûne\n- Dattes Medjool de Palmyre (500g)\n- Jus de carotte et d'orange frais\n- Soupe de lentilles aux épices\n\n### Pour le repas\n- Hommos artisanal\n- Moutabbal maison\n- Falafels prêts à frire\n- Epices à falafel\n\n### Les douceurs\n- Baklawa pistache (500g)\n- Knafeh à préparer\n- Sirop de rose\n- Eau de fleur d'oranger\n\n### La surprise\n- Un foulard traditionnel libanais\n- Une carte avec prière du iftar\n\n## Prix spécial Ramadan\n\nLa box complète : **89€** (valeur 115€)\n\nLivraison gratuite en région parisienne. Réservation jusqu'au 1er mars.",
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=500&fit=crop",
+      "author": "Équipe Souk Beyrouth",
+      "date": "2024-01-25",
+      "readTime": "4 min",
+      "featured": true
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="À propos de Souk Beyrouth - Découvrez notre histoire, nos valeurs et notre engagement pour une épicerie libanaise authentique.">
+  <title>À Propos | Souk Beyrouth</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/pages/a-propos.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+  <!-- Bandeau d'annonce -->
+  <div class="announcement-bar">
+    <div class="container">
+      🚚 Livraison gratuite à partir de 50€
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="logo" aria-label="Souk Beyrouth - Accueil">
+        <div class="logo__icon">🌿</div>
+        <span class="logo__text">Souk <span>Beyrouth</span></span>
+      </a>
+      
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="../index.html" class="nav__link">Accueil</a>
+        <a href="./catalogue.html" class="nav__link">Catalogue</a>
+        <a href="./blog.html" class="nav__link">Blog</a>
+        <a href="./a-propos.html" class="nav__link active">À Propos</a>
+        <a href="./contact.html" class="nav__link">Contact</a>
+      </nav>
+      
+      <div class="header__actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation mobile -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+    <ul class="mobile-nav__list">
+      <li><a href="../index.html" class="mobile-nav__link">Accueil</a></li>
+      <li><a href="./catalogue.html" class="mobile-nav__link">Catalogue</a></li>
+      <li><a href="./blog.html" class="mobile-nav__link">Blog</a></li>
+      <li><a href="./a-propos.html" class="mobile-nav__link active">À Propos</a></li>
+      <li><a href="./contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav__footer">
+      <a href="./catalogue.html" class="btn btn-primary btn-lg" style="width: 100%;">
+        Voir le catalogue
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="page-hero page-hero--about">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="../index.html">Accueil</a>
+          <span>/</span>
+          <span aria-current="page">À Propos</span>
+        </nav>
+        <h1 class="page-hero__title">Notre Histoire</h1>
+        <p class="page-hero__description">
+          De Beyrouth à Paris, une histoire de passion pour les saveurs authentiques du Liban.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Story -->
+    <section class="section story-section">
+      <div class="container">
+        <div class="story__grid">
+          <div class="story__image reveal">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=1000&fit=crop" alt="Nour et Karim, fondateurs de Souk Beyrouth" loading="lazy">
+            <div class="story__image-caption">
+              Nour & Karim, fondateurs de Souk Beyrouth
+            </div>
+          </div>
+          <div class="story__content reveal">
+            <span class="section-header__label">Notre Parcours</span>
+            <h2 class="section-header__title">Une rencontre,<br>une passion</h2>
+            
+            <div class="story__text">
+              <p>
+                Tout a commencé en 2018, lors d'un voyage de Karim au Liban. Fasciné par les marchés colorés de Beyrouth, 
+                les épices parfumées et l'hospitalité légendaire des Libanais, il est tombé amoureux de ce pays 
+                et de Nour, une Beyrouthine passionnée par sa cuisine.
+              </p>
+              <p>
+                De retour à Paris, nous avons constaté un manque : les produits libanais disponibles étaient 
+                souvent industriels, adaptés au goût européen, loin des saveurs authentiques que Nour connaissait. 
+                C'est ainsi qu'est née l'idée de <strong>Souk Beyrouth</strong>.
+              </p>
+              <p>
+                En 2020, nous avons lancé notre épicerie en ligne avec une mission claire : importer directement 
+                les meilleurs produits du Liban, en travaillant avec des producteurs familiaux que nous connaissons personnellement.
+              </p>
+            </div>
+            
+            <blockquote class="story__quote">
+              "Nous voulions offrir aux Français la même qualité de produits que nous trouvons dans les souks de Beyrouth."
+              <cite>— Nour & Karim</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Valeurs -->
+    <section class="section values-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__label">Nos Valeurs</span>
+          <h2 class="section-header__title">Ce qui nous anime</h2>
+        </div>
+        
+        <div class="values__grid">
+          <div class="value-card reveal">
+            <div class="value-card__icon">🤝</div>
+            <h3 class="value-card__title">Sourcing Direct</h3>
+            <p class="value-card__text">
+              Nous travaillons directement avec des producteurs familiaux au Liban, 
+              sans intermédiaires. Cela garantit une qualité optimale et une rémunération équitable.
+            </p>
+          </div>
+          
+          <div class="value-card reveal">
+            <div class="value-card__icon">🌿</div>
+            <h3 class="value-card__title">Authenticité</h3>
+            <p class="value-card__text">
+              Nos produits sont authentiques, préparés selon les recettes traditionnelles. 
+              Pas d'adaptation, pas de compromis sur les saveurs.
+            </p>
+          </div>
+          
+          <div class="value-card reveal">
+            <div class="value-card__icon">♻️</div>
+            <h3 class="value-card__title">Durabilité</h3>
+            <p class="value-card__text">
+              Nous privilégions l'agriculture durable et les emballages éco-responsables. 
+              Notre impact environnemental nous tient à cœur.
+            </p>
+          </div>
+          
+          <div class="value-card reveal">
+            <div class="value-card__icon">💚</div>
+            <h3 class="value-card__title">Communauté</h3>
+            <p class="value-card__text">
+              Nous sommes plus qu'une épicerie : nous créons des liens entre la communauté libanaise en France 
+              et les amateurs de cuisine méditerranéenne.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Origines -->
+    <section class="section origins-section">
+      <div class="container">
+        <div class="origins__grid">
+          <div class="origins__content reveal">
+            <span class="section-header__label">Nos Origines</span>
+            <h2 class="section-header__title">Du Liban<br>à votre table</h2>
+            <p class="origins__text">
+              Chaque produit que nous proposons a une histoire, une origine précise. 
+              De Beyrouth à Tripoli, du Chouf à la Bekaa, nous parcourons le Liban 
+              pour dénicher les meilleures saveurs.
+            </p>
+            
+            <div class="origins__locations">
+              <div class="origin-item">
+                <span class="origin-item__marker">📍</span>
+                <div class="origin-item__content">
+                  <h4>Beyrouth</h4>
+                  <p>Hommos, café arabica, épices du souk</p>
+                </div>
+              </div>
+              <div class="origin-item">
+                <span class="origin-item__marker">📍</span>
+                <div class="origin-item__content">
+                  <h4>Bchaaleh</h4>
+                  <p>Huile d'olive des oliviers millénaires</p>
+                </div>
+              </div>
+              <div class="origin-item">
+                <span class="origin-item__marker">📍</span>
+                <div class="origin-item__content">
+                  <h4>Tripoli</h4>
+                  <p>Baklawa, pâtisseries traditionnelles</p>
+                </div>
+              </div>
+              <div class="origin-item">
+                <span class="origin-item__marker">📍</span>
+                <div class="origin-item__content">
+                  <h4>Chouf</h4>
+                  <p>Za'atar sauvage, thym des montagnes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="origins__image reveal">
+            <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=800&h=600&fit=crop" alt="Paysage du Liban" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Timeline -->
+    <section class="section timeline-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__label">Notre Parcours</span>
+          <h2 class="section-header__title">L'histoire de Souk Beyrouth</h2>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__date">2018</div>
+            <div class="timeline__content">
+              <h3>La Rencontre</h3>
+              <p>Karim découvre le Liban et rencontre Nour à Beyrouth. Début d'une histoire d'amour et d'une passion commune.</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item reveal">
+            <div class="timeline__date">2019</div>
+            <div class="timeline__content">
+              <h3>Les Premiers Voyages</h3>
+              <p>Visites des producteurs, dégustations, rencontres. Nous bâtissons notre réseau de partenaires de confiance.</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item reveal">
+            <div class="timeline__date">2020</div>
+            <div class="timeline__content">
+              <h3>Lancement de Souk Beyrouth</h3>
+              <p>Ouverture de notre épicerie en ligne avec une première sélection de 20 produits authentiques.</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item reveal">
+            <div class="timeline__date">2021</div>
+            <div class="timeline__content">
+              <h3>Expansion</h3>
+              <p>Nous élargissons notre catalogue et commençons la livraison dans toute la France métropolitaine.</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item reveal">
+            <div class="timeline__date">2022</div>
+            <div class="timeline__content">
+              <h3>Boutique Physique</h3>
+              <p>Ouverture de notre première boutique à Paris, espace de rencontre et de découverte.</p>
+            </div>
+          </div>
+          
+          <div class="timeline__item reveal">
+            <div class="timeline__date">2024</div>
+            <div class="timeline__content">
+              <h3>Nouveau Site</h3>
+              <p>Lancement de notre nouveau site web pour une meilleure expérience client et de nouvelles fonctionnalités.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="section section-sm cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-box__content">
+            <h2>Rejoignez l'aventure Souk Beyrouth</h2>
+            <p>Découvrez nos produits et faites-vous livrer les saveurs authentiques du Liban.</p>
+          </div>
+          <a href="./catalogue.html" class="btn btn-gold btn-lg">
+            Voir le catalogue
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="logo" aria-label="Souk Beyrouth">
+            <div class="logo__icon">🌿</div>
+            <span class="logo__text">Souk <span>Beyrouth</span></span>
+          </a>
+          <p class="footer__description">
+            Épicerie fine libanaise authentique.
+          </p>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html" class="footer__link">Accueil</a></li>
+            <li><a href="./catalogue.html" class="footer__link">Catalogue</a></li>
+            <li><a href="./blog.html" class="footer__link">Blog</a></li>
+            <li><a href="./a-propos.html" class="footer__link">À Propos</a></li>
+            <li><a href="./contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Contact</h4>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span>contact@souk-beyrouth.fr</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 Souk Beyrouth. Tous droits réservés.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast__message"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/utils.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

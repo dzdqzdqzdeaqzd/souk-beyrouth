@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catalogue Souk Beyrouth - Découvrez notre sélection de produits libanais : épices, huiles d'olive, pâtisseries, produits frais. Livraison et Click & Collect.">
+  <title>Catalogue | Souk Beyrouth</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/pages/catalogue.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+  <!-- Bandeau d'annonce -->
+  <div class="announcement-bar">
+    <div class="container">
+      🚚 Livraison gratuite à partir de 50€
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="logo" aria-label="Souk Beyrouth - Accueil">
+        <div class="logo__icon">🌿</div>
+        <span class="logo__text">Souk <span>Beyrouth</span></span>
+      </a>
+      
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="../index.html" class="nav__link">Accueil</a>
+        <a href="./catalogue.html" class="nav__link active">Catalogue</a>
+        <a href="./blog.html" class="nav__link">Blog</a>
+        <a href="./a-propos.html" class="nav__link">À Propos</a>
+        <a href="./contact.html" class="nav__link">Contact</a>
+      </nav>
+      
+      <div class="header__actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation mobile -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+    <ul class="mobile-nav__list">
+      <li><a href="../index.html" class="mobile-nav__link">Accueil</a></li>
+      <li><a href="./catalogue.html" class="mobile-nav__link active">Catalogue</a></li>
+      <li><a href="./blog.html" class="mobile-nav__link">Blog</a></li>
+      <li><a href="./a-propos.html" class="mobile-nav__link">À Propos</a></li>
+      <li><a href="./contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav__footer">
+      <a href="./contact.html" class="btn btn-primary btn-lg" style="width: 100%;">
+        Nous contacter
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Catalogue -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="../index.html">Accueil</a>
+          <span>/</span>
+          <span aria-current="page">Catalogue</span>
+        </nav>
+        <h1 class="page-hero__title">Notre Catalogue</h1>
+        <p class="page-hero__description">
+          Découvrez notre sélection de produits authentiques importés directement du Liban.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Catalogue -->
+    <section class="section catalogue">
+      <div class="container">
+        <!-- Filtres -->
+        <div class="catalogue__filters reveal">
+          <div class="catalogue__filter-group">
+            <span class="catalogue__filter-label">Filtrer par :</span>
+            <div class="catalogue__filter-buttons" id="categoryFilters">
+              <!-- Injecté par JS -->
+            </div>
+          </div>
+          <div class="catalogue__results">
+            <span id="resultsCount">Chargement...</span>
+          </div>
+        </div>
+
+        <!-- Grille de produits -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Produits injectés par JS -->
+        </div>
+
+        <!-- Message si aucun résultat -->
+        <div class="catalogue__empty" id="emptyMessage" style="display: none;">
+          <span class="catalogue__empty-icon">🔍</span>
+          <h3>Aucun produit trouvé</h3>
+          <p>Essayez de changer vos critères de recherche.</p>
+          <button class="btn btn-primary" onclick="filterProducts('all')">
+            Voir tous les produits
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="section section-sm cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-box__content">
+            <h2>Vous ne trouvez pas ce que vous cherchez ?</h2>
+            <p>Contactez-nous pour les commandes spéciales ou les produits sur demande.</p>
+          </div>
+          <a href="./contact.html" class="btn btn-gold btn-lg">
+            Nous contacter
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Panier -->
+  <div class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="modal__overlay" onclick="hideCartModal()"></div>
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 id="cartTitle" class="modal__title">Votre Panier</h2>
+        <button class="modal__close" onclick="hideCartModal()" aria-label="Fermer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__body">
+        <div id="cartContent">
+          <!-- Contenu du panier injecté par JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="logo" aria-label="Souk Beyrouth">
+            <div class="logo__icon">🌿</div>
+            <span class="logo__text">Souk <span>Beyrouth</span></span>
+          </a>
+          <p class="footer__description">
+            Épicerie fine libanaise authentique. Nous importons directement 
+            les meilleurs produits du Liban pour vous faire découvrir 
+            les vraies saveurs de la cuisine libanaise.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html" class="footer__link">Accueil</a></li>
+            <li><a href="./catalogue.html" class="footer__link">Catalogue</a></li>
+            <li><a href="./blog.html" class="footer__link">Blog</a></li>
+            <li><a href="./a-propos.html" class="footer__link">À Propos</a></li>
+            <li><a href="./contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Catégories</h4>
+          <ul class="footer__links">
+            <li><a href="./catalogue.html?category=epicerie" class="footer__link">Épicerie</a></li>
+            <li><a href="./catalogue.html?category=frais" class="footer__link">Frais</a></li>
+            <li><a href="./catalogue.html?category=patisseries" class="footer__link">Pâtisseries</a></li>
+            <li><a href="./catalogue.html?category=epices" class="footer__link">Épices</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Contact</h4>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span>contact@souk-beyrouth.fr</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 Souk Beyrouth. Tous droits réservés.
+        </p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Mentions légales</a>
+          <a href="#" class="footer__legal-link">CGV</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast__message"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/utils.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/pages/catalogue.js"></script>
+</body>
+</html>

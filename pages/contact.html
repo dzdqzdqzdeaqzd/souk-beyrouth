@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Souk Beyrouth - Livraison à domicile, Click & Collect, questions sur nos produits libanais. Nous sommes là pour vous aider.">
+  <title>Contact | Souk Beyrouth</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/pages/contact.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+  <!-- Bandeau d'annonce -->
+  <div class="announcement-bar">
+    <div class="container">
+      🚚 Livraison gratuite à partir de 50€
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="logo" aria-label="Souk Beyrouth - Accueil">
+        <div class="logo__icon">🌿</div>
+        <span class="logo__text">Souk <span>Beyrouth</span></span>
+      </a>
+      
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="../index.html" class="nav__link">Accueil</a>
+        <a href="./catalogue.html" class="nav__link">Catalogue</a>
+        <a href="./blog.html" class="nav__link">Blog</a>
+        <a href="./a-propos.html" class="nav__link">À Propos</a>
+        <a href="./contact.html" class="nav__link active">Contact</a>
+      </nav>
+      
+      <div class="header__actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation mobile -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+    <ul class="mobile-nav__list">
+      <li><a href="../index.html" class="mobile-nav__link">Accueil</a></li>
+      <li><a href="./catalogue.html" class="mobile-nav__link">Catalogue</a></li>
+      <li><a href="./blog.html" class="mobile-nav__link">Blog</a></li>
+      <li><a href="./a-propos.html" class="mobile-nav__link">À Propos</a></li>
+      <li><a href="./contact.html" class="mobile-nav__link active">Contact</a></li>
+    </ul>
+    <div class="mobile-nav__footer">
+      <a href="./catalogue.html" class="btn btn-primary btn-lg" style="width: 100%;">
+        Voir le catalogue
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Contact -->
+    <section class="page-hero page-hero--contact">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="../index.html">Accueil</a>
+          <span>/</span>
+          <span aria-current="page">Contact</span>
+        </nav>
+        <h1 class="page-hero__title">Contactez-nous</h1>
+        <p class="page-hero__description">
+          Une question sur nos produits ? Besoin d'informations sur la livraison ? 
+          Nous sommes là pour vous aider.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact__grid">
+          <!-- Formulaire -->
+          <div class="contact__form-wrapper reveal">
+            <h2 class="contact__form-title">Envoyez-nous un message</h2>
+            
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-group">
+                <label for="name" class="form-label form-label-required">Nom</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Votre nom"
+                  required
+                >
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label form-label-required">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="votre@email.com"
+                  required
+                >
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="form-label form-label-required">Sujet</label>
+                <select id="subject" name="subject" class="form-select" required>
+                  <option value="">Sélectionnez un sujet</option>
+                  <option value="commande">Question sur ma commande</option>
+                  <option value="produit">Question sur un produit</option>
+                  <option value="livraison">Informations livraison</option>
+                  <option value="partenariat">Partenariat</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label form-label-required">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  class="form-textarea" 
+                  placeholder="Votre message..."
+                  required
+                ></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Envoyer le message
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+              
+              <p class="contact-form__note">
+                En envoyant ce formulaire, vous acceptez notre 
+                <a href="#">politique de confidentialité</a>.
+              </p>
+            </form>
+          </div>
+          
+          <!-- Infos de contact -->
+          <div class="contact__info reveal">
+            <div class="contact-info__card">
+              <h3>Nos coordonnées</h3>
+              
+              <div class="contact-info__item">
+                <div class="contact-info__icon">📍</div>
+                <div class="contact-info__content">
+                  <h4>Adresse</h4>
+                  <p>Souk Beyrouth<br>Paris, France</p>
+                  <a href="#" class="contact-info__link">Voir sur la carte</a>
+                </div>
+              </div>
+              
+              <div class="contact-info__item">
+                <div class="contact-info__icon">📧</div>
+                <div class="contact-info__content">
+                  <h4>Email</h4>
+                  <p>contact@souk-beyrouth.fr</p>
+                  <a href="mailto:contact@souk-beyrouth.fr" class="contact-info__link">Envoyer un email</a>
+                </div>
+              </div>
+              
+              <div class="contact-info__item">
+                <div class="contact-info__icon">📞</div>
+                <div class="contact-info__content">
+                  <h4>Téléphone</h4>
+                  <p>+33 1 XX XX XX XX</p>
+                  <span class="contact-info__hours">Lun-Ven, 9h-18h</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-info__card">
+              <h3>Horaires d'ouverture</h3>
+              
+              <div class="contact-hours">
+                <div class="contact-hours__row">
+                  <span>Lundi - Vendredi</span>
+                  <span>9h00 - 19h00</span>
+                </div>
+                <div class="contact-hours__row">
+                  <span>Samedi</span>
+                  <span>10h00 - 18h00</span>
+                </div>
+                <div class="contact-hours__row">
+                  <span>Dimanche</span>
+                  <span>Fermé</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="section faq-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__label">FAQ</span>
+          <h2 class="section-header__title">Questions fréquentes</h2>
+        </div>
+        
+        <div class="faq__grid">
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Quels sont les délais de livraison ?</span>
+              <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>
+                Nous livrons sous 48-72h en France métropolitaine. Pour la région parisienne, 
+                la livraison est gratuite dès 50€ d'achat. Les produits frais sont expédiés 
+                en transport réfrigéré pour garantir leur fraîcheur.
+              </p>
+            </div>
+          </div>
+          
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Comment fonctionne le Click & Collect ?</span>
+              <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>
+                Commandez en ligne et choisissez l'option Click & Collect. Votre commande sera 
+                préparée sous 24h et vous pourrez la retirer à notre boutique aux horaires d'ouverture. 
+                Gratuit et sans minimum d'achat.
+              </p>
+            </div>
+          </div>
+          
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Les produits frais se conservent-ils bien ?</span>
+              <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>
+                Nos produits frais (hommos, labneh) sont préparés quotidiennement et expédiés 
+                en emballage isotherme avec pains de glace. Ils se conservent 5-7 jours au réfrigérateur. 
+                Consultez la date de péremption sur chaque produit.
+              </p>
+            </div>
+          </div>
+          
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Puis-je passer une commande spéciale ?</span>
+              <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>
+                Absolument ! Contactez-nous pour les commandes spéciales, les plateaux de mezzés 
+                pour événements, ou les produits que vous ne trouvez pas sur notre site. 
+                Nous avons accès à un large réseau de fournisseurs au Liban.
+              </p>
+            </div>
+          </div>
+          
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Quelle est votre politique de retour ?</span>
+              <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>
+                Si un produit ne vous satisfait pas, contactez-nous sous 48h après réception. 
+                Nous vous proposerons un remboursement ou un échange. Les produits frais ne sont 
+                pas éligibles au retour pour des raisons d'hygiène, sauf en cas de problème qualité.
+              </p>
+            </div>
+          </div>
+          
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Livrez-vous à l'international ?</span>
+              <svg class="faq-item__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>
+                Pour le moment, nous ne livrons qu'en France métropolitaine. Nous étudions 
+                l'ouverture vers la Belgique, la Suisse et le Luxembourg. Inscrivez-vous à 
+                notre newsletter pour être tenu informé !
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="section section-sm cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-box__content">
+            <h2>Prêt à découvrir nos produits ?</h2>
+            <p>Explorez notre catalogue et commandez dès maintenant.</p>
+          </div>
+          <a href="./catalogue.html" class="btn btn-gold btn-lg">
+            Voir le catalogue
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="logo" aria-label="Souk Beyrouth">
+            <div class="logo__icon">🌿</div>
+            <span class="logo__text">Souk <span>Beyrouth</span></span>
+          </a>
+          <p class="footer__description">
+            Épicerie fine libanaise authentique.
+          </p>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html" class="footer__link">Accueil</a></li>
+            <li><a href="./catalogue.html" class="footer__link">Catalogue</a></li>
+            <li><a href="./blog.html" class="footer__link">Blog</a></li>
+            <li><a href="./a-propos.html" class="footer__link">À Propos</a></li>
+            <li><a href="./contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Contact</h4>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span>contact@souk-beyrouth.fr</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 Souk Beyrouth. Tous droits réservés.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast__message"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/utils.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/pages/contact.js"></script>
+</body>
+</html>

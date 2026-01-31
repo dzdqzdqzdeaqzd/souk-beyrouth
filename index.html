@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Souk Beyrouth - Épicerie fine libanaise authentique. Découvrez nos produits importés du Liban : za'atar, huile d'olive, hommos, baklawa. Livraison à domicile et Click & Collect.">
+  <meta name="keywords" content="épicerie libanaise, cuisine libanaise, za'atar, hommos, baklawa, produits du Liban, Beyrouth">
+  <meta name="author" content="Souk Beyrouth">
+  <meta name="theme-color" content="#00665E">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Souk Beyrouth | Épicerie Fine Libanaise">
+  <meta property="og:description" content="L'authenticité libanaise livrée chez vous. Découvrez nos produits d'exception importés du Liban.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://souk-beyrouth.fr">
+  <meta property="og:image" content="./assets/images/og-image.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Souk Beyrouth | Épicerie Fine Libanaise">
+  <meta name="twitter:description" content="L'authenticité libanaise livrée chez vous.">
+  
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GroceryStore",
+    "name": "Souk Beyrouth",
+    "description": "Épicerie fine libanaise authentique",
+    "url": "https://souk-beyrouth.fr",
+    "telephone": "+33-1-XX-XX-XX-XX",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Paris",
+      "addressRegion": "Île-de-France",
+      "addressCountry": "FR"
+    },
+    "openingHours": "Mo-Sa 09:00-20:00",
+    "priceRange": "€€",
+    "servesCuisine": "Libanaise"
+  }
+  </script>
+  
+  <title>Souk Beyrouth | Épicerie Fine Libanaise</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/pages/home.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+  <!-- Bandeau d'annonce -->
+  <div class="announcement-bar">
+    <div class="container">
+      🚚 <strong>Livraison gratuite</strong> à partir de 50€ d'achat en région parisienne
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="./index.html" class="logo" aria-label="Souk Beyrouth - Accueil">
+        <div class="logo__icon">🌿</div>
+        <span class="logo__text">Souk <span>Beyrouth</span></span>
+      </a>
+      
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="./index.html" class="nav__link active">Accueil</a>
+        <a href="./pages/catalogue.html" class="nav__link">Catalogue</a>
+        <a href="./pages/blog.html" class="nav__link">Blog</a>
+        <a href="./pages/a-propos.html" class="nav__link">À Propos</a>
+        <a href="./pages/contact.html" class="nav__link">Contact</a>
+      </nav>
+      
+      <div class="header__actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation mobile -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+    <ul class="mobile-nav__list">
+      <li><a href="./index.html" class="mobile-nav__link active">Accueil</a></li>
+      <li><a href="./pages/catalogue.html" class="mobile-nav__link">Catalogue</a></li>
+      <li><a href="./pages/blog.html" class="mobile-nav__link">Blog</a></li>
+      <li><a href="./pages/a-propos.html" class="mobile-nav__link">À Propos</a></li>
+      <li><a href="./pages/contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav__footer">
+      <a href="./pages/catalogue.html" class="btn btn-primary btn-lg" style="width: 100%;">
+        Voir le catalogue
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__background">
+        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=1920&h=1080&fit=crop" alt="Table de mezzés libanais" loading="eager">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <span class="hero__label reveal">Épicerie Fine Libanaise</span>
+        <h1 class="hero__title reveal">
+          L'authenticité libanaise<br>
+          <em>livrée chez vous</em>
+        </h1>
+        <p class="hero__description reveal">
+          Découvrez nos produits d'exception importés directement du Liban : 
+          épices, huiles d'olive, pâtisseries et produits frais. 
+          Une épicerie de quartier chic à Beyrouth, maintenant à Paris.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="./pages/catalogue.html" class="btn btn-primary btn-lg">
+            Découvrir nos produits
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="./pages/a-propos.html" class="btn btn-outline btn-lg">
+            Notre histoire
+          </a>
+        </div>
+        <div class="hero__features reveal">
+          <div class="hero__feature">
+            <span class="hero__feature-icon">🚚</span>
+            <span class="hero__feature-text">Livraison à domicile</span>
+          </div>
+          <div class="hero__feature">
+            <span class="hero__feature-icon">📍</span>
+            <span class="hero__feature-text">Click & Collect</span>
+          </div>
+          <div class="hero__feature">
+            <span class="hero__feature-icon">✈️</span>
+            <span class="hero__feature-text">Importé du Liban</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Produits Phares -->
+    <section class="section featured-products">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__label">Nos Best-sellers</span>
+          <h2 class="section-header__title">Produits phares</h2>
+          <p class="section-header__description">
+            Les incontournables de notre épicerie, sélectionnés pour leur authenticité et leur qualité exceptionnelle.
+          </p>
+        </div>
+        
+        <div class="products-grid" id="featuredProducts">
+          <!-- Produits injectés par JS -->
+        </div>
+        
+        <div class="featured-products__cta reveal">
+          <a href="./pages/catalogue.html" class="btn btn-secondary btn-lg">
+            Voir tout le catalogue
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Notre Histoire -->
+    <section class="section our-story">
+      <div class="container">
+        <div class="our-story__grid">
+          <div class="our-story__image reveal">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=1000&fit=crop" alt="Couple cuisinant ensemble" loading="lazy">
+            <div class="our-story__image-badge">
+              <span>Depuis 2020</span>
+            </div>
+          </div>
+          <div class="our-story__content reveal">
+            <span class="section-header__label">Notre Histoire</span>
+            <h2 class="section-header__title">Un couple, deux cultures,<br>une passion</h2>
+            <p class="our-story__text">
+              <strong>Souk Beyrouth</strong> est né de notre rencontre : Nour, libanaise de Beyrouth, et Karim, français passionné par le Proche-Orient. Notre mission ? Faire découvrir aux Parisiens les saveurs authentiques de la cuisine libanaise, loin des clichés et des recettes adaptées.
+            </p>
+            <p class="our-story__text">
+              Nous travaillons directement avec des producteurs familiaux au Liban, que nous connaissons personnellement. Chaque produit raconte une histoire : les oliviers millénaires de Bchaaleh, les épiciers traditionnels du souk de Tripoli, les artisans pâtissiers de Beyrouth.
+            </p>
+            <blockquote class="our-story__quote">
+              "Nous voulions recréer l'ambiance d'une épicerie de quartier chic à Beyrouth, où l'on trouve des produits d'exception et où l'on prend le temps de discuter."
+              <cite>— Nour & Karim, fondateurs</cite>
+            </blockquote>
+            <div class="our-story__stats">
+              <div class="our-story__stat">
+                <span class="our-story__stat-number">50+</span>
+                <span class="our-story__stat-label">Produits</span>
+              </div>
+              <div class="our-story__stat">
+                <span class="our-story__stat-number">15</span>
+                <span class="our-story__stat-label">Producteurs</span>
+              </div>
+              <div class="our-story__stat">
+                <span class="our-story__stat-number">2000+</span>
+                <span class="our-story__stat-label">Clients</span>
+              </div>
+            </div>
+            <a href="./pages/a-propos.html" class="btn btn-primary">
+              En savoir plus
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Catégories -->
+    <section class="section categories">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__label">Explorez</span>
+          <h2 class="section-header__title">Nos univers</h2>
+        </div>
+        
+        <div class="categories__grid">
+          <a href="./pages/catalogue.html?category=epicerie" class="category-card reveal">
+            <div class="category-card__image">
+              <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&h=400&fit=crop" alt="Huile d'olive" loading="lazy">
+            </div>
+            <div class="category-card__content">
+              <span class="category-card__icon">🫒</span>
+              <h3 class="category-card__title">Épicerie</h3>
+              <p class="category-card__description">Huiles d'olive, confitures, café et douceurs</p>
+            </div>
+          </a>
+          
+          <a href="./pages/catalogue.html?category=frais" class="category-card reveal">
+            <div class="category-card__image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&h=400&fit=crop" alt="Produits frais" loading="lazy">
+            </div>
+            <div class="category-card__content">
+              <span class="category-card__icon">🧀</span>
+              <h3 class="category-card__title">Frais</h3>
+              <p class="category-card__description">Hommos, labneh et fromages traditionnels</p>
+            </div>
+          </a>
+          
+          <a href="./pages/catalogue.html?category=patisseries" class="category-card reveal">
+            <div class="category-card__image">
+              <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600&h=400&fit=crop" alt="Pâtisseries orientales" loading="lazy">
+            </div>
+            <div class="category-card__content">
+              <span class="category-card__icon">🥮</span>
+              <h3 class="category-card__title">Pâtisseries</h3>
+              <p class="category-card__description">Baklawa, knafeh et douceurs orientales</p>
+            </div>
+          </a>
+          
+          <a href="./pages/catalogue.html?category=epices" class="category-card reveal">
+            <div class="category-card__image">
+              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=400&fit=crop" alt="Épices orientales" loading="lazy">
+            </div>
+            <div class="category-card__content">
+              <span class="category-card__icon">🌿</span>
+              <h3 class="category-card__title">Épices</h3>
+              <p class="category-card__description">Za'atar, sumac et mélanges traditionnels</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Livraison -->
+    <section class="section delivery">
+      <div class="container">
+        <div class="delivery__grid">
+          <div class="delivery__content reveal">
+            <span class="section-header__label">Livraison</span>
+            <h2 class="section-header__title">Commandez en ligne,<br>recevez chez vous</h2>
+            <p class="delivery__text">
+              Nous livrons partout en France métropolitaine. Pour la région parisienne, 
+              profitez de la livraison gratuite dès 50€ d'achat. Vous préférez retirer votre commande ? 
+              Le Click & Collect est disponible dans notre boutique.
+            </p>
+            
+            <div class="delivery__options">
+              <div class="delivery__option">
+                <div class="delivery__option-icon">🚚</div>
+                <div class="delivery__option-content">
+                  <h4>Livraison à domicile</h4>
+                  <p>48-72h en France métropolitaine</p>
+                </div>
+              </div>
+              <div class="delivery__option">
+                <div class="delivery__option-icon">📍</div>
+                <div class="delivery__option-content">
+                  <h4>Click & Collect</h4>
+                  <p>Retrait gratuit sous 24h</p>
+                </div>
+              </div>
+              <div class="delivery__option">
+                <div class="delivery__option-icon">📦</div>
+                <div class="delivery__option-content">
+                  <h4>Emballage soigné</h4>
+                  <p>Produits frais protégés</p>
+                </div>
+              </div>
+            </div>
+            
+            <a href="./pages/contact.html" class="btn btn-primary">
+              Voir les zones de livraison
+            </a>
+          </div>
+          <div class="delivery__image reveal">
+            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop" alt="Colis livraison" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Newsletter -->
+    <section class="section newsletter">
+      <div class="container">
+        <div class="newsletter__inner reveal">
+          <div class="newsletter__content">
+            <span class="newsletter__icon">📧</span>
+            <h2 class="newsletter__title">Restez informés</h2>
+            <p class="newsletter__text">
+              Inscrivez-vous à notre newsletter pour recevoir nos recettes, 
+              découvrir nos nouveautés et profiter d'offres exclusives.
+            </p>
+          </div>
+          <form class="newsletter__form" id="newsletterForm">
+            <div class="newsletter__form-group">
+              <input 
+                type="email" 
+                class="form-input newsletter__input" 
+                placeholder="Votre adresse email"
+                required
+                aria-label="Adresse email"
+              >
+              <button type="submit" class="btn btn-gold newsletter__btn">
+                S'inscrire
+              </button>
+            </div>
+            <p class="newsletter__privacy">
+              En vous inscrivant, vous acceptez notre <a href="#">politique de confidentialité</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="./index.html" class="logo" aria-label="Souk Beyrouth">
+            <div class="logo__icon">🌿</div>
+            <span class="logo__text">Souk <span>Beyrouth</span></span>
+          </a>
+          <p class="footer__description">
+            Épicerie fine libanaise authentique. Nous importons directement 
+            les meilleurs produits du Liban pour vous faire découvrir 
+            les vraies saveurs de la cuisine libanaise.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="./index.html" class="footer__link">Accueil</a></li>
+            <li><a href="./pages/catalogue.html" class="footer__link">Catalogue</a></li>
+            <li><a href="./pages/blog.html" class="footer__link">Blog</a></li>
+            <li><a href="./pages/a-propos.html" class="footer__link">À Propos</a></li>
+            <li><a href="./pages/contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Catégories</h4>
+          <ul class="footer__links">
+            <li><a href="./pages/catalogue.html?category=epicerie" class="footer__link">Épicerie</a></li>
+            <li><a href="./pages/catalogue.html?category=frais" class="footer__link">Frais</a></li>
+            <li><a href="./pages/catalogue.html?category=patisseries" class="footer__link">Pâtisseries</a></li>
+            <li><a href="./pages/catalogue.html?category=epices" class="footer__link">Épices</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__column">
+          <h4 class="footer__title">Contact</h4>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <span>Paris, France</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span>contact@souk-beyrouth.fr</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <span>+33 1 XX XX XX XX</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2024 Souk Beyrouth. Tous droits réservés.
+        </p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Mentions légales</a>
+          <a href="#" class="footer__legal-link">CGV</a>
+          <a href="#" class="footer__legal-link">Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast__message"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/utils.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/pages/home.js"></script>
+</body>
+</html>
